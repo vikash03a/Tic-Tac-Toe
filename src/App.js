@@ -11,7 +11,7 @@ function App() {
         let strings = Array.from(gameState);
         if (strings[index])
             return;
-        strings[index] = isXChance ? "❌" : "⭕";
+        strings[index] = isXChance ? "⭕" : "❌";
         updateIsXChance(!isXChance)
         updateGameState(strings)
     }
