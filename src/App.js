@@ -11,7 +11,7 @@ function App() {
         let strings = Array.from(gameState);
         if (strings[index])
             return;
-        strings[index] = isXChance ? "⭕" : "❌";
+        strings[index] = isXChance ? "O" : "❌";
         updateIsXChance(!isXChance)
         updateGameState(strings)
     }
@@ -67,7 +67,7 @@ function App() {
                 <SquareComponent onClick={() => onUserClicked(8)} state={gameState[8]}/>
             </div>
             <button className="clear-button" onClick={clearGame}>Clear Game</button>
-            <p className="fc-aqua fw-600"><i>By Vikash Kumar</i></p>
+            <p className="fc-aqua fw-600" style={{color:"lightPink", fontSize:"20px"}}add><i>By Vikash Kumar</i></p>
         </div>
     );
 }
